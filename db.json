@@ -1,20 +1,34 @@
 {
-    "articles" : [{
-          "id": 1,
-          "title": "My First Article",
-          "content": "Hello World",
-          "author": "Orangefire"
-        }, {
-          "id": 2,
-          "title": "Angular component",
-          "content": "Angular component looks awesome!",
-          "author": "Orangefire"
-        }, {
-          "id": 3,
-          "title": "Angular service",
-          "content": "I read something about angular service, i will try it soon",
-          "author": "Orangefire"
-        }
-    ]
+  "articles": [
+    {
+      "id": 1,
+      "title": "My First Article",
+      "content": "Hello World",
+      "author": "Orangefire"
+    },
+    {
+      "id": 2,
+      "title": "Angular component",
+      "content": "Angular component looks awesome!",
+      "author": "Orangefire"
+    },
+    {
+      "id": 3,
+      "title": "Angular service",
+      "content": "I read something about angular service, i will try it soon",
+      "author": "Orangefire"
+    },
+    {
+      "title": "Fake Title",
+      "content": "One day at Polytech",
+      "author": "Me as Paul Ziolkowski",
+      "id": 4
+    },
+    {
+      "title": "test",
+      "content": "Hello",
+      "author": "Paul",
+      "id": 6
+    }
+  ]
 }
-    

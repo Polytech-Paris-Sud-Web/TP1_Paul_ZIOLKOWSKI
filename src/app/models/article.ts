@@ -1,7 +1,6 @@
 export interface Article {
-    id: BigInteger,
+    id?: number, // ? pour optional 
     title : string,
     content : string,
     author : string
-  };
-  
+};
