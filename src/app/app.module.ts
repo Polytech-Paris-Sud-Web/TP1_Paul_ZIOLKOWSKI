@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FilterPipe } from './filter.pipe';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticlesComponent } from './articles/articles.component';
-import {ArticleService} from "./article.service";
+import { ArticleService} from "./article.service";
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
 
 const appRoutes: Routes = [
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    FilterPipe
   ],
   imports: [
     RouterModule.forRoot(
@@ -30,7 +33,9 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ArticleService],
   bootstrap: [AppComponent]
