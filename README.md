@@ -2,9 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
+## Thanks to
+> Thanks to Tom RAVANEL for his help
+> I also got help from a former student for some concepts and the setup of the application
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Don't forget to launch the `json-server` ! 
 
 ## Code scaffolding
 
