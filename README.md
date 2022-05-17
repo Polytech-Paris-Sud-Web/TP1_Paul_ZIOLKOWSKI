@@ -6,6 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 > Thanks to Tom RAVANEL for his help
 > I also got help from a former student for some concepts and the setup of the application
 
+## What I have done 
+- All features mandatory : Use the `json-server`, delete an article, create an article, routes.
+- Search filter for Title and Content 
+- Limit 10 articles displayed (reverse, because we want the 10 last articles)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

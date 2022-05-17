@@ -17,6 +17,6 @@ export class FilterPipe implements PipeTransform {
         article =>
             article.title.toLowerCase().includes(searchText)
             || article.content.toLowerCase().includes(searchText)
-    ).slice(0,10);
+    ).slice(-10);
   }
 }
