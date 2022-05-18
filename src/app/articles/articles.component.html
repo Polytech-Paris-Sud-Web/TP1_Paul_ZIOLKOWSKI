@@ -3,5 +3,11 @@
            [(ngModel)]="searchText" [ngModelOptions]="{standalone:true }">
 </div>
 
-<app-article *ngFor="let article of this.articles | filter:searchText " [article]="article" (deletedArticle)="delete($event)">
-</app-article>
+<div class="container-fluid row m-3">
+        <app-article 
+            *ngFor="let article of this.articles | filter:searchText " 
+            [article]="article" 
+            (deletedArticle)="delete($event)" 
+            class="col-md-3" style="margin-bottom:5px;">
+        </app-article>
+</div>

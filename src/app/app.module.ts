@@ -11,11 +11,20 @@ import { ArticleComponent } from './article/article.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleService} from "./article.service";
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
+
+import { AuthorService} from "./author.service";
+import { AuthorBiographieComponent } from './author-biographie/author-biographie.component';
+import { AuthorListComponent } from './author-list/author-list.component';
+import { AuthorComponent } from './author/author.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
-  { path: '', component: ArticlesComponent }
+  { path: '', component: ArticlesComponent },
+  { path: 'article/:id', component: ArticleDetailsComponent },
+  { path: 'author/:name', component: AuthorBiographieComponent },
+  { path: 'authors', component: AuthorListComponent }
 ]
 
 @NgModule({
@@ -24,7 +33,11 @@ const appRoutes: Routes = [
     ArticleComponent,
     ArticlesComponent,
     ArticleCreationComponent,
-    FilterPipe
+    FilterPipe,
+    ArticleDetailsComponent,
+    AuthorBiographieComponent,
+    AuthorListComponent,
+    AuthorComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -37,7 +50,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, AuthorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

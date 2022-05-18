@@ -21,50 +21,56 @@
     {
       "title": "Fake Title",
       "content": "One day at Polytech",
-      "author": "Me as Paul Ziolkowski",
+      "author": "Paul ZIOLKOWSKI",
       "id": 4
-    },
-    {
-      "title": "test",
-      "content": "Hello",
-      "author": "Paul",
-      "id": 6
     },
     {
       "title": "testa",
       "content": "uef,lm",
-      "author": "aze",
+      "author": "Paul ZIOLKOWSKI",
       "id": 7
     },
     {
       "title": "ezerf",
       "content": "zee",
-      "author": "efrefr",
+      "author": "Paul ZIOLKOWSKI",
       "id": 8
     },
     {
       "title": "zeftrzerf",
       "content": "zerfzef",
-      "author": "azferfe",
+      "author": "Paul ZIOLKOWSKI",
       "id": 9
     },
     {
       "title": "ezerf",
       "content": "zee",
-      "author": "efrefr",
+      "author": "Paul ZIOLKOWSKI",
       "id": 10
     },
     {
       "title": "zeftrzerf",
       "content": "zerfzef",
-      "author": "azferfe",
+      "author": "Paul ZIOLKOWSKI",
       "id": 11
     },
     {
       "title": "azer",
       "content": "azerzefr",
-      "author": "zerer",
+      "author": "Paul ZIOLKOWSKI",
       "id": 12
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Paul ZIOLKOWSKI",
+      "biographie": "Une biographie intéressante serait de détailler ma vie... Mais est-ce que j'en ai le temps ? Pas vraiment..."
+    },
+    {
+      "id": 2,
+      "name": "Orangefire",
+      "biographie": "Professeur de Web Avancé"
     }
   ]
 }
