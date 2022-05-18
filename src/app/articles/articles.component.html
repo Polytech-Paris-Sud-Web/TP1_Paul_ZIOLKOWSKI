@@ -1,9 +1,11 @@
-<div class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="searchArticle"
-           [(ngModel)]="searchText" [ngModelOptions]="{standalone:true }">
+<div class="m-3">
+    <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="searchArticle"
+               [(ngModel)]="searchText" [ngModelOptions]="{standalone:true }">
+    </div>
 </div>
-
-<div class="container-fluid row m-3">
+    
+<div class=" row m-3">
         <app-article 
             *ngFor="let article of this.articles | filter:searchText " 
             [article]="article" 
