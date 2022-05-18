@@ -4,10 +4,10 @@ import {ArticleService} from "../article.service";
 
 @Component({
   selector: 'app-articles',
-  templateUrl: './articles.component.html',
-  styleUrls: ['./articles.component.css']
+  templateUrl: './articles-list.component.html',
+  styleUrls: ['./articles-list.component.css']
 })
-export class ArticlesComponent implements OnInit {
+export class ArticlesListComponent implements OnInit {
 
   searchText: String;
 
@@ -22,7 +22,7 @@ export class ArticlesComponent implements OnInit {
   }
   
   getArticles() {
-      this.articleService.getLastsArticles().subscribe(it => {
+      this.articleService.getArticles().subscribe(it => {
           this.articles = it;
       });
   }

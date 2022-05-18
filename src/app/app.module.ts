@@ -17,10 +17,11 @@ import { AuthorService} from "./author.service";
 import { AuthorBiographieComponent } from './author-biographie/author-biographie.component';
 import { AuthorListComponent } from './author-list/author-list.component';
 import { AuthorComponent } from './author/author.component';
+import { ArticlesListComponent } from './articles-list/articles-list.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
-  { path: 'articles', component: ArticlesComponent },
+  { path: 'articles', component: ArticlesListComponent },
   { path: '', component: ArticlesComponent },
   { path: 'article/:id', component: ArticleDetailsComponent },
   { path: 'author/:name', component: AuthorBiographieComponent },
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     ArticleDetailsComponent,
     AuthorBiographieComponent,
     AuthorListComponent,
-    AuthorComponent
+    AuthorComponent,
+    ArticlesListComponent
   ],
   imports: [
     RouterModule.forRoot(

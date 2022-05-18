@@ -11,14 +11,19 @@ export class ArticleService {
   constructor(private http : HttpClient) {
   }
   public getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>("http://localhost:3000/articles"); 
+    return this.http.get<Article[]>("http://localhost:3000/articles?_sort=createdAt&_order=desc"); 
   }
+  public getLastsArticles(): Observable<Article[]> {
+    return this.http.get<Article[]>("http://localhost:3000/articles?_sort=createdAt&_order=desc&_start=0&_end=10"); 
+  }
+  
+
   public getArticle(id: number): Observable<Article> {
     return this.http.get<Article>("http://localhost:3000/articles/"+id); 
   }
 
   public getArticlesOfAuthor(name: string): Observable<Article[]> {
-    return this.http.get<Article[]>("http://localhost:3000/articles?author="+name); 
+    return this.http.get<Article[]>("http://localhost:3000/articles?author="+name+"&_sort=createdAt&_order=desc"); 
   }
 
   public deleteArticle(article: Article) {
