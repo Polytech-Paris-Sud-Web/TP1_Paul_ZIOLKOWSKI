@@ -1,6 +1,14 @@
-<div *ngIf="author" class="card">
-    <div class="card-title"><a routerLink="/author/{{author.name}}"> <h3 class="text-center"> {{author.name}} </h3></a></div>
-    <div class="card-body">
-        <p> {{ numberArticles }} articles written</p>
+<div *ngIf="author then known_author else unknown_author">Le contenu saisi ici sera ignoré.</div>
+<ng-template #known_author>
+    <div class="card">
+        <div class="card-title"><a routerLink="/author/{{author.name}}"> <h3 class="text-center"> {{author.name}} </h3></a></div>
+        <div class="card-body">
+            <p> {{ numberArticles }} articles written</p>
+        </div>
     </div>
-</div>
+</ng-template> 
+<ng-template #unknown_author>
+    <div class="card">
+        L'auteur est inconnu.
+    </div>
+</ng-template> 
